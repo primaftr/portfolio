@@ -3,18 +3,15 @@ import {
   Box,
   Button,
   Flex,
-  Grid,
-  GridItem,
   Heading,
   Image,
   Link,
   List,
-  ListIcon,
   ListItem,
-  Progress,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
-import { BsLinkedin, BsInstagram, BsTwitter } from "react-icons/bs";
+
+import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 import { GoMarkGithub } from "react-icons/go";
 import { Bio } from "../components/Bio";
@@ -46,6 +43,8 @@ const Index = () => (
             display="inline-block"
             src="/image.jpg"
           />
+
+          {/* <ChakraNextImage alt="mg" size="100%" src={profile.src} /> */}
         </Flex>
       </Box>
 

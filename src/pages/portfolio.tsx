@@ -18,7 +18,7 @@ const Portfolio: React.FC<portfolioProps> = ({}) => {
           <PortoGridItem
             id="travel-ga"
             title="Travel-GA"
-            thumbnail={"../laravel-thumb.jpg"}
+            thumbnail={"../travel/laravel-thumb.jpg"}
           >
             An app for route optimization for <i>travel</i> (indonesian public
             transport) using <i>Genetic Algorithm</i>
@@ -28,7 +28,7 @@ const Portfolio: React.FC<portfolioProps> = ({}) => {
           <PortoGridItem
             id="lilpost"
             title="LilPost"
-            thumbnail={"../laravel-thumb.jpg"}
+            thumbnail={"../travel/laravel-thumb.jpg"}
           >
             A - reddit like - simple app with simple CRUD
           </PortoGridItem>
@@ -38,7 +38,7 @@ const Portfolio: React.FC<portfolioProps> = ({}) => {
           <PortoGridItem
             id="stellar"
             title="Stellar Bulk"
-            thumbnail={"../laravel-thumb.jpg"}
+            thumbnail={"../travel/laravel-thumb.jpg"}
           >
             An app for Stellar user to merge multiple account without pain in
             the neck
@@ -47,7 +47,7 @@ const Portfolio: React.FC<portfolioProps> = ({}) => {
         <Section delay={0.1}>
           <PortoGridItem
             id="menkiki"
-            thumbnail={"../laravel-thumb.jpg"}
+            thumbnail={"../travel/laravel-thumb.jpg"}
             title="Menkiki"
           >
             An app that suggests ramen(noodle) shops based on a given photo of

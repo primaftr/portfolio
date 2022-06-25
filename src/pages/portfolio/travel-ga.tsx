@@ -5,13 +5,17 @@ import {
   ListItem,
   Box,
   Heading,
-  Image,
   Link,
   List,
   Flex,
+  Image,
   useColorModeValue,
 } from "@chakra-ui/react";
+import NextImage from "next/image";
 
+import travel1 from "../../public/travel/travel-1.jpg";
+import travel2 from "../../public/travel/travel-2.png";
+import travel3 from "../../public/travel/travel-3.png";
 import React from "react";
 import NextLink from "next/link";
 import { Layout } from "../../components/Layout";
@@ -25,7 +29,7 @@ const TravelGA: React.FC<TravelGAProps> = ({}) => {
       <Layout>
         <Section>
           <Box>
-            <Image src="/laravel-thumb.jpg" />
+            <Image src={"../travel/laravel-thumb.jpg"} />
           </Box>
         </Section>
         <Box my={5}>
@@ -83,9 +87,9 @@ const TravelGA: React.FC<TravelGAProps> = ({}) => {
               Preview
             </Heading>
             <Box>
-              <Image borderRadius="lg" my={5} src="/laravel.jpg" />
-              <Image borderRadius="lg" my={5} src="/laravel.jpg" />
-              <Image borderRadius="lg" my={5} src="/laravel.jpg" />
+              <Image my={3} borderRadius="lg" src="../travel/travel-1.jpg" />
+              <Image my={3} borderRadius="lg" src="../travel/travel-2.png" />
+              <Image my={3} borderRadius="lg" src="../travel/travel-3.png" />
             </Box>
           </Section>
         </Box>
