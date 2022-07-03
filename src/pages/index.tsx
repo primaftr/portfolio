@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from "@chakra-ui/icons";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -9,7 +9,6 @@ import {
   List,
   ListItem,
 } from "@chakra-ui/react";
-import NextLink from "next/link";
 
 import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 
@@ -17,8 +16,11 @@ import { GoMarkGithub } from "react-icons/go";
 import { Bio } from "../components/Bio";
 import { Hero } from "../components/Hero";
 import { Layout } from "../components/Layout";
+import PortfolioSection from "../components/PortfolioSection";
 import Section from "../components/Section";
 import Skills from "../components/Skills";
+import NextLink from "next/link";
+import { ChocCarousel } from "../components/ChocCarousel";
 
 const Index = () => (
   <>
@@ -28,8 +30,8 @@ const Index = () => (
           Hello! I am
         </Heading>
       </Box>
-      <Box display={{ md: "flex" }} my="2">
-        <Box borderRadius={"lg"} p={3} mx={5} flexGrow={1}>
+      <Box display={{ md: "flex" }} p={{ base: 0, md: 3 }} my="2">
+        <Box flexGrow={1}>
           <Hero title="Prima Fitra Wahyu " />
           <p>Fullstack Developer</p>
         </Box>
@@ -43,8 +45,6 @@ const Index = () => (
             display="inline-block"
             src="/image.jpg"
           />
-
-          {/* <ChakraNextImage alt="mg" size="100%" src={profile.src} /> */}
         </Flex>
       </Box>
 
@@ -58,14 +58,6 @@ const Index = () => (
           developement.
         </Box>
       </Section>
-      <Flex my={5} justifyContent={"center"}>
-        <NextLink href={"/portfolio"}>
-          <Button>
-            My Portfolio
-            <ArrowRightIcon ml={2} />
-          </Button>
-        </NextLink>
-      </Flex>
 
       <Section id="skilss">
         <Heading as="h1" variant={"section-title"}>
@@ -73,14 +65,30 @@ const Index = () => (
         </Heading>
         <Skills />
       </Section>
+      <Section id="portfolio">
+        <Heading as="h1" variant={"section-title"}>
+          <NextLink href="/portfolio" passHref>
+            <Link _hover={{ textDecoration: "none" }}>
+              Portfolio
+              <ExternalLinkIcon w={"4"} h={"4"} mx="3px" />
+            </Link>
+          </NextLink>
+        </Heading>
+        <Box display={"flex"} justifyContent="center">
+          <Box mt="5">
+            {/* <PortfolioSection /> */}
+            <ChocCarousel />
+          </Box>
+        </Box>
+      </Section>
       <Section id="bio" delay={0.4}>
         <Heading as="h1" variant={"section-title"}>
-          Bio
+          Education
         </Heading>
-        <Bio year="1999">Born in Tangerang, Jakarta</Bio>
+
         <Bio year="2010-2013">SMPN 32 Pekanbaru</Bio>
         <Bio year="2010-2013">SMAN 5 Pekanbaru</Bio>
-        <Bio year="2016 to present"> Universitas Riau</Bio>
+        <Bio year="2016 to present"> Computer Science, Universitas Riau</Bio>
       </Section>
 
       <Section id="contacts" delay={0.6}>

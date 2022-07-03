@@ -61,8 +61,8 @@ const TravelGA: React.FC<TravelGAProps> = ({}) => {
                         Link
                       </Badge>
                     </Box>
-                    <Link href="https://www.inkdrop.app/">
-                      https://www.inkdrop.app/ <ExternalLinkIcon mx="2px" />
+                    <Link href="https://travel-ga.codemaji.xyz/">
+                      Travel-GA <ExternalLinkIcon mx="2px" />
                     </Link>
                   </Flex>
                 </ListItem>

@@ -15,13 +15,39 @@ const styles = {
     body: {
       bg: mode("#f0e7db", "#202023")(props),
     },
+    ".swiper-pagination-bullet-active": {
+      "background-color": "#RED !important",
+    },
+
+    ".swiper-button-next": {
+      color: "white",
+
+      transition: "0.6s ease",
+
+      _hover: {
+        color: "black",
+      },
+    },
+    ".swiper-button-prev": {
+      color: "white",
+      transition: "0.6s ease",
+      _hover: {
+        color: "black",
+      },
+    },
+    " .swiper-pagination-bullet": {
+      bg: "blackAlpha.800",
+    },
+    ".swiper-slide-active": {
+      overflow: true,
+      _hover: {
+        cursor: "pointer",
+        bg: "white",
+        transform: "scale(3.5)",
+      },
+    },
   }),
 };
-
-// const theme = extendTheme({
-//   lightTheme: lightThemeColor,  // <== unfortunately, there isn't lightTheme key for setting light Theme.
-//   darkTheme: darkThemeColor
-// })
 
 const theme = extendTheme({
   components: {
@@ -56,6 +82,9 @@ const theme = extendTheme({
       heroGradientStart: {
         default: "#7928CA",
         _dark: "#e3a7f9",
+      },
+      mySwiper: {
+        default: "#purple",
       },
       heroGradientEnd: {
         default: "#FF0080",

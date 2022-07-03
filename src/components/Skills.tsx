@@ -1,13 +1,4 @@
-import {
-  Box,
-  Flex,
-  Grid,
-  GridItem,
-  Icon,
-  Progress,
-  Stack,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { useColorModeValue, Box, Icon, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 import { FaLaravel, FaPhp, FaVuejs } from "react-icons/fa";
 import {
@@ -35,40 +26,49 @@ const Skills: React.FC = () => {
   ];
   return (
     <>
-      <Flex margin={"auto"}>
-        <Box>
-          <Stack spacing={2}>
-            {skill.map((item) => (
-              <>
-                <Grid templateColumns={"repeat(2,1fr)"}>
-                  <GridItem>
-                    <Box
-                      minW={"8em"}
-                      alignSelf="center"
-                      alignContent={"center"}
-                      alignItems="center"
-                      justifyContent={"center"}
-                      justifyItems="center"
-                      justifySelf={"center"}
-                    >
-                      <Icon as={item.logo} mr="2" />
-                      {item.name}
-                    </Box>
-                  </GridItem>
-                  <GridItem alignSelf={"center"}>
-                    <Box minW={"20em"}>
-                      <Progress
-                        colorScheme={useColorModeValue("pink", "teal")}
-                        value={item.bar}
-                      />
-                    </Box>
-                  </GridItem>
-                </Grid>
-              </>
-            ))}
-          </Stack>
-        </Box>
-      </Flex>
+      <SimpleGrid columns={3} spacing={2}>
+        {skill.map((item) => (
+          <>
+            <Box
+              alignSelf="center"
+              alignContent={"center"}
+              alignItems="center"
+              justifyContent={"center"}
+              justifyItems="center"
+              justifySelf={"center"}
+              display={"flex"}
+              flexDir="column"
+              key={item.name}
+            >
+              <Box
+                display={"flex"}
+                borderRadius={"full"}
+                borderColor="white"
+                bg={useColorModeValue("gray.100", "whiteAlpha.200")}
+                w="3em"
+                h="3em"
+                alignSelf="center"
+                alignContent={"center"}
+                alignItems="center"
+                justifyContent={"center"}
+                justifyItems="center"
+                justifySelf={"center"}
+                borderWidth={2}
+                my="2"
+                borderStyle="solid"
+              >
+                <Icon
+                  // color={useColorModeValue("", "white")}
+                  as={item.logo}
+                  boxSize="1.5em"
+                  mx="2"
+                />
+              </Box>
+              {item.name}
+            </Box>
+          </>
+        ))}
+      </SimpleGrid>
     </>
   );
 };
