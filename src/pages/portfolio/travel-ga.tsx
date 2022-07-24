@@ -1,23 +1,19 @@
 import { ChevronRightIcon, ExternalLinkIcon } from "@chakra-ui/icons";
 import {
-  Text,
   Badge,
-  ListItem,
   Box,
+  Flex,
   Heading,
+  Image,
   Link,
   List,
-  Flex,
-  Image,
+  ListItem,
+  Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import NextImage from "next/image";
 
-import travel1 from "../../public/travel/travel-1.jpg";
-import travel2 from "../../public/travel/travel-2.png";
-import travel3 from "../../public/travel/travel-3.png";
-import React from "react";
 import NextLink from "next/link";
+import React from "react";
 import { Layout } from "../../components/Layout";
 import Section from "../../components/Section";
 

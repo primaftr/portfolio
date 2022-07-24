@@ -15,37 +15,6 @@ const styles = {
     body: {
       bg: mode("#f0e7db", "#202023")(props),
     },
-    ".swiper-pagination-bullet-active": {
-      "background-color": "#RED !important",
-    },
-
-    ".swiper-button-next": {
-      color: "white",
-
-      transition: "0.6s ease",
-
-      _hover: {
-        color: "black",
-      },
-    },
-    ".swiper-button-prev": {
-      color: "white",
-      transition: "0.6s ease",
-      _hover: {
-        color: "black",
-      },
-    },
-    " .swiper-pagination-bullet": {
-      bg: "blackAlpha.800",
-    },
-    ".swiper-slide-active": {
-      overflow: true,
-      _hover: {
-        cursor: "pointer",
-        bg: "white",
-        transform: "scale(3.5)",
-      },
-    },
   }),
 };
 

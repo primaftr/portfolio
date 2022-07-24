@@ -8,6 +8,7 @@ import {
   Link,
   List,
   ListItem,
+  SimpleGrid,
 } from "@chakra-ui/react";
 
 import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
@@ -43,7 +44,7 @@ const Index = () => (
             borderStyle="solid"
             maxWidth="100px"
             display="inline-block"
-            src="/image.jpg"
+            src="/me.jpg"
           />
         </Flex>
       </Box>
@@ -63,7 +64,9 @@ const Index = () => (
         <Heading as="h1" variant={"section-title"}>
           Skills
         </Heading>
-        <Skills />
+        <SimpleGrid columns={3} spacing={2}>
+          <Skills />
+        </SimpleGrid>
       </Section>
       <Section id="portfolio">
         <Heading as="h1" variant={"section-title"}>

@@ -28,9 +28,9 @@ const Portfolio: React.FC<portfolioProps> = ({}) => {
           <PortoGridItem
             id="lilpost"
             title="LilPost"
-            thumbnail={"../travel/laravel-thumb.jpg"}
+            thumbnail={"../lilpost/lilpost-thumb.jpg"}
           >
-            A - reddit like - simple app with simple CRUD
+            A - reddit like - app with simple CRUD using TypeScript and ORM
           </PortoGridItem>
         </Section>
 
@@ -38,7 +38,7 @@ const Portfolio: React.FC<portfolioProps> = ({}) => {
           <PortoGridItem
             id="stellar"
             title="Stellar Bulk"
-            thumbnail={"../travel/laravel-thumb.jpg"}
+            thumbnail={"../stellar/stellar-thumb.jpg"}
           >
             An app for Stellar user to merge multiple account without pain in
             the neck
@@ -46,12 +46,12 @@ const Portfolio: React.FC<portfolioProps> = ({}) => {
         </Section>
         <Section delay={0.1}>
           <PortoGridItem
-            id="menkiki"
+            id="uag-solution"
             thumbnail={"../travel/laravel-thumb.jpg"}
-            title="Menkiki"
+            title="UAG Solution"
           >
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
+            App to diagnose and repair your broken PC/Laptop using machine
+            learning.
           </PortoGridItem>
         </Section>
       </SimpleGrid>

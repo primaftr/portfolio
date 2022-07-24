@@ -1,4 +1,14 @@
-import { Text, Image, Box, Flex, Stack, HStack } from "@chakra-ui/react";
+import {
+  Text,
+  Image,
+  Box,
+  Flex,
+  Stack,
+  HStack,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import NextLink from "next/link";
+import { Link } from "@chakra-ui/react";
 
 import React, { useEffect, useState } from "react";
 
@@ -25,25 +35,34 @@ const arrowStyles = {
 
 const slides = [
   {
-    img: "/travel/travel-1.jpg",
-    label: "First Slide",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+    img: "/travel/laravel-thumb.jpg",
+    label: "Travel GA",
+    description: "Route optimization app using Genetic Algorithm ",
+    link: "portfolio/travel-ga",
   },
   {
-    img: "/travel/travel-2.png",
-    label: "First Slide",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+    img: "/stellar/stellar-thumb.jpg",
+    label: "Stellar Bulk",
+    description: "An app for merging stellar account in one click  ",
+    link: "portfolio/stellar",
   },
   {
-    img: "/travel/travel-3.png",
-    label: "First Slide",
-    description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+    img: "/lilpost/lilpost-thumb.jpg",
+    label: "Lilpost",
+    description: "Simplistic reddit version web using GraphQL",
+    link: "portfolio/lilpost",
   },
 ];
 export const ChocCarousel = ({}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [stopAuto, setStopAuto] = useState(false);
   const slidesCount = slides.length;
+  const carouselHover = {
+    ".carousel:hover &": {
+      opacity: 1,
+      color: useColorModeValue("black", "white"),
+    },
+  };
   useEffect(() => {
     if (!stopAuto) {
       const interval = setInterval(() => {
@@ -86,48 +105,53 @@ export const ChocCarousel = ({}) => {
       <Flex w="full" pos="relative" overflow="hidden">
         <Flex w="full" {...carouselStyle}>
           {slides.map((slide, sid) => (
-            <Box key={`slide-${sid}`} boxSize="full" shadow="md" flex="none">
-              <Text
-                color="white"
-                fontSize="xs"
-                p="8px 12px"
-                pos="absolute"
-                top="0"
-              ></Text>
-              <Image
-                src={slide.img}
-                alt="carousel image"
+            <NextLink href={slide.link} key={`slide-${sid}`}>
+              {/* <Link> */}
+              <Box
+                as={Link}
+                key={`slide-${sid}`}
                 boxSize="full"
-                backgroundSize="cover"
-                sx={{
-                  ".carousel:hover &": {
-                    opacity: 0.3,
-                  },
-                }}
-              />
-              <Stack
-                p="8px 12px"
-                pos="absolute"
-                bottom="24px"
-                textAlign="center"
-                w="full"
-                mb="8"
-                color="white"
+                shadow="md"
+                flex="none"
               >
-                <Box
-                  color={"blackAlpha.800"}
+                <Image
+                  src={slide.img}
+                  alt="carousel image"
+                  boxSize="full"
+                  backgroundSize="cover"
                   sx={{
                     ".carousel:hover &": {
-                      opacity: 1,
-                      color: "white",
+                      opacity: 0.3,
                     },
                   }}
+                />
+                <Stack
+                  p="8px 12px"
+                  pos="absolute"
+                  bottom="20px"
+                  textAlign="center"
+                  w="full"
                 >
-                  <Text fontSize="2xl">{slide.label}</Text>
-                  <Text fontSize="lg">{slide.description}</Text>
-                </Box>
-              </Stack>
-            </Box>
+                  <Box
+                    color={"blackAlpha.800"}
+                    sx={{
+                      ".carousel:hover &": {
+                        opacity: 1,
+                        color: "white",
+                      },
+                    }}
+                  >
+                    <Text sx={carouselHover} opacity={0} fontSize="2xl">
+                      {slide.label}
+                    </Text>
+                    <Text sx={carouselHover} opacity={0} fontSize="lg">
+                      {slide.description}
+                    </Text>
+                  </Box>
+                </Stack>
+              </Box>
+              {/* </Link> */}
+            </NextLink>
           ))}
         </Flex>
         <Text {...(arrowStyles as any)} left="0" onClick={prevSlide}>
@@ -143,7 +167,7 @@ export const ChocCarousel = ({}) => {
             <Box
               key={`dots-${slide}`}
               cursor="pointer"
-              boxSize={["7px", null, "15px"]}
+              boxSize={["7px", null, "7px"]}
               m="0 2px"
               bg={currentSlide === slide ? "blackAlpha.800" : "blackAlpha.500"}
               rounded="50%"
