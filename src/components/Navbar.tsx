@@ -4,6 +4,7 @@ import {
   Flex,
   Heading,
   IconButton,
+  Image,
   Link,
   Menu,
   MenuButton,
@@ -37,15 +38,14 @@ export default function Nav() {
           alignItems={"center"}
           justifyContent={"space-between"}
         >
-          <Flex align={"center"} mr="5">
+          <Flex mr="3">
             <LinkItem href={"/"}>
               <Link _hover={{ textDecoration: "none" }}>
-                <Heading as="h1" size="lg" letterSpacing={"tight"}>
-                  Logo
-                </Heading>
+                <Image src="/logo.png" maxW={"2em"}></Image>
               </Link>
             </LinkItem>
           </Flex>
+          <Flex mr={1}>|</Flex>
           <Stack
             direction={{ base: "column", md: "row" }}
             display={{ base: "none", md: "flex" }}
