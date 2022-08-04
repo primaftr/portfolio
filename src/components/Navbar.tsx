@@ -41,7 +41,10 @@ export default function Nav() {
           <Flex mr="3">
             <LinkItem href={"/"}>
               <Link _hover={{ textDecoration: "none" }}>
-                <Image src="/logo.png" maxW={"2em"}></Image>
+                <Image
+                  src={useColorModeValue("/light-logo.png", "/logo.png")}
+                  maxW={"2em"}
+                ></Image>
               </Link>
             </LinkItem>
           </Flex>
@@ -57,8 +60,8 @@ export default function Nav() {
             <LinkItem href="/portfolio">
               <Link>Portfolio</Link>
             </LinkItem>
-            <LinkItem href="https://github.com/primexist">
-              <Link href="https://github.com/primexist">
+            <LinkItem href="https://github.com/primeXist/portfolio">
+              <Link href="https://github.com/primeXist/portfolio">
                 <ExternalLinkIcon
                   // variant="unstyled"
                   // aria-label="github"
@@ -83,14 +86,20 @@ export default function Nav() {
                 ></MenuButton>
                 <MenuList>
                   <Link>
-                    <NextLink href="/#" passHref>
-                      <MenuItem>Bio</MenuItem>
+                    <NextLink href="/portfolio" passHref>
+                      <MenuItem>Portfolio</MenuItem>
                     </NextLink>
                   </Link>
 
                   <Link>
-                    <NextLink href="/portfolio" passHref>
-                      <MenuItem>Works</MenuItem>
+                    <NextLink
+                      href="https://github.com/primeXist/portfolio"
+                      passHref
+                    >
+                      <MenuItem>
+                        <ExternalLinkIcon as={GoMarkGithub} mr="1" />
+                        Source
+                      </MenuItem>
                     </NextLink>
                   </Link>
                 </MenuList>
