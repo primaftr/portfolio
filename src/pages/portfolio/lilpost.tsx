@@ -25,7 +25,7 @@ const lilpost: React.FC<lilpostProps> = ({}) => {
       <Layout>
         <Section>
           <Box>
-            <Image src="/laravel-thumb.jpg" />
+            <Image src="/lilpost/lilpost-thumb.jpg" />
           </Box>
         </Section>
         <Box my={5}>
@@ -40,9 +40,9 @@ const lilpost: React.FC<lilpostProps> = ({}) => {
               LilPost
             </Heading>
             <Text>
-              An app for route optimization for <i>travel</i> (indonesian public
-              transport) using <i>Genetic Algorithm</i>. Made for final project
-              on my Bachelor Degree.
+              Reddit like app with simple CRUD system, built for deepen my
+              knowledge on Javascript ORM and Typescript. Using overkill stack
+              such as GraphQL to better understanding REST API.
             </Text>
 
             <Box my={5}>
@@ -57,8 +57,8 @@ const lilpost: React.FC<lilpostProps> = ({}) => {
                         Link
                       </Badge>
                     </Box>
-                    <Link href="https://www.inkdrop.app/">
-                      https://www.inkdrop.app/ <ExternalLinkIcon mx="2px" />
+                    <Link href="https://lilpost.codemaji.xyz/">
+                      Lilpost <ExternalLinkIcon mx="2px" />
                     </Link>
                   </Flex>
                 </ListItem>
@@ -72,7 +72,21 @@ const lilpost: React.FC<lilpostProps> = ({}) => {
                         Stack
                       </Badge>
                     </Box>
-                    PHP, MySQL, Laravel, Vue
+                    React, Next JS, GraphQL, Typescript
+                  </Flex>
+                  <Flex>
+                    <Box minW={"100px"}>
+                      <Badge
+                        colorScheme={useColorModeValue("teal", "purple")}
+                        mr={3}
+                      >
+                        Source
+                      </Badge>
+                    </Box>
+                    <Link href="https://github.com/primeXist/lilpost">
+                      https://github.com/primeXist/lilpost
+                      <ExternalLinkIcon mx="2px" />
+                    </Link>
                   </Flex>
                 </ListItem>
               </List>
@@ -83,9 +97,9 @@ const lilpost: React.FC<lilpostProps> = ({}) => {
               Preview
             </Heading>
             <Box>
-              <Image borderRadius="lg" my={5} src="/laravel.jpg" />
-              <Image borderRadius="lg" my={5} src="/laravel.jpg" />
-              <Image borderRadius="lg" my={5} src="/laravel.jpg" />
+              {/* <Image borderRadius="lg" my={5} src="/laravel.jpg" />
+              <Image borderRadius="lg" my={5} src="/laravel.jpg" /> */}
+              <Image borderRadius="lg" my={5} src="/lilpost/lilpost.png" />
             </Box>
           </Section>
         </Box>

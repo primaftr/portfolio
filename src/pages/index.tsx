@@ -14,6 +14,7 @@ import {
 import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 import { GoMarkGithub } from "react-icons/go";
+import { CgMail } from "react-icons/cg";
 import { Bio } from "../components/Bio";
 import { Hero } from "../components/Hero";
 import { Layout } from "../components/Layout";
@@ -51,12 +52,11 @@ const Index = () => (
 
       <Section>
         <Box mt={2} textAlign="justify">
-          I am an adept, passionate, and enthusiast learner. I have a high
-          passion and dedication on full-stack web development. I'm a final year
-          student in Riau University majoring on Computer Science. Currently im
-          seeking for any opportunity to leverage my javascript fullstack
-          skills, and also to improve my knowledge and experience on web
-          developement.
+          I am a final year student in Riau University majoring on Computer
+          Science. I have high interest with full-stack web development. Im
+          familiar with tech stack such as PHP, SQL, Javascript, HTML and CSS.
+          I'm seeking for any opportunity to leverage my skills, and also to
+          improve my knowledge and experience on web developement.
         </Box>
       </Section>
 
@@ -90,7 +90,7 @@ const Index = () => (
         </Heading>
 
         <Bio year="2010-2013">SMPN 32 Pekanbaru</Bio>
-        <Bio year="2010-2013">SMAN 5 Pekanbaru</Bio>
+        <Bio year="2013-2016">SMAN 5 Pekanbaru</Bio>
         <Bio year="2016 to present"> Computer Science, Universitas Riau</Bio>
       </Section>
 
@@ -98,7 +98,6 @@ const Index = () => (
         <Heading as="h1" variant={"section-title"}>
           Contacts
         </Heading>
-        <Box>Let's work together. Get in touch with me :</Box>
         <Box mt={2} textAlign="justify">
           <List>
             <ListItem>
@@ -108,7 +107,7 @@ const Index = () => (
                   colorScheme="teal"
                   leftIcon={<GoMarkGithub />}
                 >
-                  @PrimeXist
+                  PrimeXist
                 </Button>
               </Link>
             </ListItem>
@@ -135,13 +134,13 @@ const Index = () => (
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://instagram.com/PrimaFitraa" target="_blank">
+              <Link href="mailto:primafitra.code@gmail.com" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  leftIcon={<BsInstagram />}
+                  leftIcon={<CgMail />}
                 >
-                  @PrimaFitraa
+                  primafitra.code
                 </Button>
               </Link>
             </ListItem>

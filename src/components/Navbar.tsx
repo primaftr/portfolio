@@ -12,7 +12,8 @@ import {
   Stack,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { default as LinkItem, default as NextLink } from "next/link";
+import LinkItem from "next/link";
+import NextLink from "next/link";
 import { GoMarkGithub } from "react-icons/go";
 import { DarkModeSwitch } from "./DarkModeSwitch";
 
@@ -38,9 +39,11 @@ export default function Nav() {
         >
           <Flex align={"center"} mr="5">
             <LinkItem href={"/"}>
-              <Heading as="h1" size="lg" letterSpacing={"tight"}>
-                Logo
-              </Heading>
+              <Link _hover={{ textDecoration: "none" }}>
+                <Heading as="h1" size="lg" letterSpacing={"tight"}>
+                  Logo
+                </Heading>
+              </Link>
             </LinkItem>
           </Flex>
           <Stack
@@ -51,20 +54,18 @@ export default function Nav() {
             flexGrow={1}
             mt={{ base: 4, md: 0 }}
           >
-            <LinkItem href="/#bio">
-              <Link>Bio</Link>
-            </LinkItem>
             <LinkItem href="/portfolio">
               <Link>Portfolio</Link>
             </LinkItem>
             <LinkItem href="https://github.com/primexist">
-              <Link>
+              <Link href="https://github.com/primexist">
                 <ExternalLinkIcon
                   // variant="unstyled"
                   // aria-label="github"
                   as={GoMarkGithub}
                   mr="1"
                 />
+                Source
               </Link>
             </LinkItem>
           </Stack>

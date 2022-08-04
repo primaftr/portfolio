@@ -47,7 +47,7 @@ const Portfolio: React.FC<portfolioProps> = ({}) => {
         <Section delay={0.1}>
           <PortoGridItem
             id="uag-solution"
-            thumbnail={"../travel/laravel-thumb.jpg"}
+            thumbnail={"../uag/uag-thumb.jpg"}
             title="UAG Solution"
           >
             App to diagnose and repair your broken PC/Laptop using machine

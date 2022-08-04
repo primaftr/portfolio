@@ -77,7 +77,7 @@ const stellar: React.FC<stellarProps> = ({}) => {
                         Stack
                       </Badge>
                     </Box>
-                    React, NextJS, Stellar Blockchain SDK
+                    React, Typescript, NextJS, Stellar Blockchain SDK
                   </Flex>
                 </ListItem>
                 <ListItem>
@@ -90,7 +90,7 @@ const stellar: React.FC<stellarProps> = ({}) => {
                         Source
                       </Badge>
                     </Box>
-                    <Link href="https://stellar-bulk.codemaji.xyz/">
+                    <Link href="https://github.com/primeXist/stellar-bulk">
                       https://github.com/primeXist/stellar-bulk
                       <ExternalLinkIcon mx="2px" />
                     </Link>
