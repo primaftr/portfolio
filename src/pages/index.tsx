@@ -54,6 +54,7 @@ const Index = () => (
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
+            alt="profile"
             h={"100px"}
             w={"100px"}
             maxW={"100px"}
