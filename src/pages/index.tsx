@@ -4,7 +4,7 @@ import {
   Button,
   Flex,
   Heading,
-  Image,
+  // Image,
   Link,
   List,
   ListItem,
@@ -20,9 +20,11 @@ import { Hero } from "../components/Hero";
 import { Layout } from "../components/Layout";
 import PortfolioSection from "../components/PortfolioSection";
 import Section from "../components/Section";
+import NextImage from "next/image";
 import Skills from "../components/Skills";
 import NextLink from "next/link";
 import { ChocCarousel } from "../components/ChocCarousel";
+import ChakraNextImage from "../components/ChakraNextImage";
 
 const Index = () => (
   <>
@@ -38,12 +40,23 @@ const Index = () => (
           <p>Fullstack Developer</p>
         </Box>
         <Flex flexShrink={0} justifyContent="center" m={{ md: "auto" }}>
-          <Image
+          {/* <Image
             borderRadius="full"
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
             maxWidth="100px"
+            display="inline-block"
+            src="/me.jpg"
+          /> */}
+          <ChakraNextImage
+            borderRadius="full"
+            borderColor="whiteAlpha.800"
+            borderWidth={2}
+            borderStyle="solid"
+            h={"100px"}
+            w={"100px"}
+            maxW={"100px"}
             display="inline-block"
             src="/me.jpg"
           />
@@ -52,11 +65,12 @@ const Index = () => (
 
       <Section>
         <Box mt={2} textAlign="justify">
-          I am a final year student in Riau University majoring on Computer
-          Science. I have high interest with full-stack web development. Im
-          familiar with tech stack such as PHP, SQL, Javascript, HTML and CSS.
-          I'm seeking for any opportunity to leverage my skills, and also to
-          improve my knowledge and experience on web developement.
+          I am a fullstack web developer with experience in React, Vue,
+          JavaScript, TypeScript, GraphQL, MySQL, and PostgreSQL. I am
+          passionate about creating engaging and functional applications, and
+          have a solid understanding of both front-end and back-end development.
+          I am eager to bring my skills and experience to a dynamic and
+          innovative company.
         </Box>
       </Section>
 
