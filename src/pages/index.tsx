@@ -104,7 +104,17 @@ const Index = () => (
         </Heading>
 
         <Bio year="2016-2022">Freelance web developer </Bio>
-        <Bio year="2022 to present"> Fullstack Developer at Pi-xcels Ltd</Bio>
+        <Bio year="2022 to present">
+          {" "}
+          Fullstack Developer at{" "}
+          <Link
+            href="https://www.pi-xcels.com/"
+            target={"_blank"}
+            color={"teal"}
+          >
+            Pi-xcels
+          </Link>
+        </Bio>
       </Section>
       <Section id="bio" delay={0.4}>
         <Heading as="h1" variant={"section-title"}>
