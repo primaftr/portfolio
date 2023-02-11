@@ -7,6 +7,7 @@ export default class Document extends NextDocument {
       <Html>
         <Head>
           <title>Prima Fitra</title>
+          <link rel="icon" href="/logo.ico"></link>
         </Head>
         <body>
           {/* Make Color mode to persists when you refresh the page. */}
