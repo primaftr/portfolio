@@ -145,7 +145,10 @@ const Index = () => (
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="www.linkedin.com/in/prima-fitra" target="_blank">
+              <Link
+                href="https://www.linkedin.com/in/prima-fitra"
+                target="_blank"
+              >
                 <Button
                   variant="ghost"
                   colorScheme="teal"
