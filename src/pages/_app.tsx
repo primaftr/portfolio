@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import theme from "../theme";
 import { AppProps } from "next/app";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -11,6 +12,15 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Prima Fitra</title>
         <link rel="icon" href="/logo.ico"></link>
       </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-JN4MZ9GEHV"
+        strategy="afterInteractive"
+      >
+        {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        `}
+      </Script>
       <Component {...pageProps} />
     </ChakraProvider>
   );
