@@ -60,8 +60,8 @@ export default function Nav() {
             <LinkItem href="/portfolio">
               <Link>Portfolio</Link>
             </LinkItem>
-            <LinkItem href="https://github.com/primeXist/portfolio">
-              <Link href="https://github.com/primeXist/portfolio">
+            <LinkItem href="https://github.com/primaftr/portfolio">
+              <Link href="https://github.com/primaftr/portfolio">
                 <ExternalLinkIcon
                   // variant="unstyled"
                   // aria-label="github"
@@ -93,7 +93,7 @@ export default function Nav() {
 
                   <Link>
                     <NextLink
-                      href="https://github.com/primeXist/portfolio"
+                      href="https://github.com/primaftr/portfolio"
                       passHref
                     >
                       <MenuItem>

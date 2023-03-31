@@ -90,8 +90,8 @@ const stellar: React.FC<stellarProps> = ({}) => {
                         Source
                       </Badge>
                     </Box>
-                    <Link href="https://github.com/primeXist/stellar-bulk">
-                      https://github.com/primeXist/stellar-bulk
+                    <Link href="https://github.com/primaftr/stellar-bulk">
+                      https://github.com/primaftr/stellar-bulk
                       <ExternalLinkIcon mx="2px" />
                     </Link>
                   </Flex>

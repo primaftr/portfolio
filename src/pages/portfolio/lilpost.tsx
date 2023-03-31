@@ -83,8 +83,8 @@ const lilpost: React.FC<lilpostProps> = ({}) => {
                         Source
                       </Badge>
                     </Box>
-                    <Link href="https://github.com/primeXist/lilpost">
-                      https://github.com/primeXist/lilpost
+                    <Link href="https://github.com/primaftr/lilpost">
+                      https://github.com/primaftr/lilpost
                       <ExternalLinkIcon mx="2px" />
                     </Link>
                   </Flex>

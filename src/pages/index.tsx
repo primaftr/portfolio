@@ -134,13 +134,13 @@ const Index = () => (
         <Box mt={2} textAlign="justify">
           <List>
             <ListItem>
-              <Link href="https://github.com/primexist" target="_blank">
+              <Link href="https://github.com/primaftr" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<GoMarkGithub />}
                 >
-                  PrimeXist
+                  primaftr
                 </Button>
               </Link>
             </ListItem>
