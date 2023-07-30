@@ -124,7 +124,7 @@ const Index = () => (
 
         <Bio year="2010-2013">SMPN 32 Pekanbaru</Bio>
         <Bio year="2013-2016">SMAN 5 Pekanbaru</Bio>
-        <Bio year="2016 to present"> Computer Science, Universitas Riau</Bio>
+        <Bio year="2016-2023"> Computer Science, Universitas Riau</Bio>
       </Section>
 
       <Section id="contacts" delay={0.6}>
