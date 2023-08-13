@@ -62,7 +62,7 @@ const stellar: React.FC<stellarProps> = ({}) => {
                         Link
                       </Badge>
                     </Box>
-                    <Link href="https://stellar-bulk.codemaji.xyz/">
+                    <Link href="https://stellar-bulk.primaftr.me/">
                       Stellar Bulk <ExternalLinkIcon mx="2px" />
                     </Link>
                   </Flex>

@@ -57,7 +57,7 @@ const TravelGA: React.FC<TravelGAProps> = ({}) => {
                         Link
                       </Badge>
                     </Box>
-                    <Link href="https://travel-ga.codemaji.xyz/">
+                    <Link href="https://travel-ga.primaftr.me/">
                       Travel-GA <ExternalLinkIcon mx="2px" />
                     </Link>
                   </Flex>

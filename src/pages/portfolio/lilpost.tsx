@@ -57,7 +57,7 @@ const lilpost: React.FC<lilpostProps> = ({}) => {
                         Link
                       </Badge>
                     </Box>
-                    <Link href="https://lilpost.codemaji.xyz/">
+                    <Link href="https://lilpost.primaftr.me/">
                       Lilpost <ExternalLinkIcon mx="2px" />
                     </Link>
                   </Flex>
