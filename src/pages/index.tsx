@@ -105,7 +105,7 @@ const Index = () => (
         </Heading>
 
         <Bio year="2016-2022">Freelance web developer </Bio>
-        <Bio year="2022 to present">
+        <Bio year="2022 to 2024">
           {" "}
           Fullstack Developer at{" "}
           <Link
@@ -113,7 +113,25 @@ const Index = () => (
             target={"_blank"}
             color={"teal"}
           >
-            Pi-xcels
+            Pi-xcels Pte Ltd
+          </Link>
+        </Bio>
+        <Bio year="2024 to present">
+          {" "}
+          Frontend Developer at{" "}
+          <Link
+            href="https://thesoftwarepractice.com/"
+            target={"_blank"}
+            color={"teal"}
+          >
+            The Software Practice Pte Ltd
+          </Link>
+        </Bio>
+        <Bio year="2024 to present">
+          {" "}
+          Software Engineer at{" "}
+          <Link href="https://lobutuh.com/" target={"_blank"} color={"teal"}>
+            Lobutuh.com
           </Link>
         </Bio>
       </Section>
@@ -122,7 +140,6 @@ const Index = () => (
           Education
         </Heading>
 
-        <Bio year="2010-2013">SMPN 32 Pekanbaru</Bio>
         <Bio year="2013-2016">SMAN 5 Pekanbaru</Bio>
         <Bio year="2016-2023"> Computer Science, Universitas Riau</Bio>
       </Section>
